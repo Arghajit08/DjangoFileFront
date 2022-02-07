@@ -11,8 +11,7 @@ def result(request):
     from twilio.rest import Client
     
     sid='ACad20495dd3bf324541f3c9a60657ddf9'
-    authToken='4086190c4fe03c8f3976e26a3dcecb83'
-
+    authToken='b0daf1649d72fdaaeb2c94404eedc7db'
     client=Client(sid,authToken)
 
     from_whatsapp_number='whatsapp:+14155238886'

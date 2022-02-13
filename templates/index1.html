@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arghajit</title>
+        <style>
+          .inputa-box{
+            display:None;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form name=main action="{% url 'final'%}" method="get">
+    
+                <div class="input-boxes">
+                  <div class="input-box">Otp
+                    <input class="last" type="number" required name="abc" placeholder="Enter otp" required>
+                  </div>
+                  <div class="inputa-box">Otp
+                    <input class="last" type="number" value="{{otp}}" required name="otp1" placeholder="Enter otp" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="submit" value="Submit" onclick="main.action='{% url 'final'%}'; return true;">
+                  </div>
+                </div>
+              </form>
+        </div>
+    </body>

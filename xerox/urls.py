@@ -6,5 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="home"),
     path('result/',views.result,name="result"),
+    path('otp/',views.otp_verification,name="final"),
+    
 
 ]

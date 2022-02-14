@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arghajit</title>
-        <style>
-          .inputa-box{
-            display:None;
-          }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <form name=main action="{% url 'final'%}" method="get">
-    
-                <div class="input-boxes">
-                  <div class="input-box">Otp
-                    <input class="last" type="number" required name="abc" placeholder="Enter otp" required>
-                  </div>
-                  <div class="inputa-box">Otp
-                    <input class="last" type="number" value="{{otp}}" required name="otp1" placeholder="Enter otp" required>
-                  </div>
-                  <div class="input-box">
-                    <input type="submit" value="Submit" onclick="main.action='{% url 'final'%}'; return true;">
-                  </div>
-                </div>
-              </form>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+		body{
+	background-image: url("https://github.com/Arghajit08/Xeroxfirstpage/blob/main/WhatsApp%20Image%202022-02-01%20at%202.23.19%20PM.jpeg?raw=true");
+	background-size: cover;
+}
+#box{
+	margin: 40px;
+}
+.form{
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	width: 100%;
+	font-size: 18px;
+	color: #ffff;
+}
+.inputa-box{
+    display:None;
+}
+#name{
+	width: 300px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+	background-color: #fff;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);	
+}
+#Next{
+	width: 200px;
+	padding: 7px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 500;
+	border-radius: 3px;
+	background-color: rgba(250,100,0,0.8);
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.a{
+	color: black;
+	text-align: center;
+	font-size: 30px;
+}
+.main{
+	width: 400px;
+	margin: 100px auto 0px auto;
+}
+#c3{
+	background-color: #353333;
+	margin-top: 250px;
+}
+#c3 p{
+	text-align: center;
+}
+p{
+	font-size: 25px;
+	color: white;
+}
+@media only screen and (max-width: 700px){
+	body{
+	/*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+	background-image: url(web2.jpeg);
+	background-size: contain;
+
+}
+.main{
+	width: 300px;
+
+}
+#name{
+	width: 200px;
+}
+#Next{
+	width: 100px;
+}
+#c3 p{
+	text-align: center;
+}
+p{
+	font-size: 20px;
+}
+
+}
+}
+</style>
+	<title>printinALL</title>
+</head>
+<body>
+	<div>
+		<p class="a">PrintinALL<p>
+	</div>
+<div class="main">
+	<div class="form">
+	<form name=main action="{% url 'final'%}" method="get" id="box">
+		<label>Enter your OTP</label>
+		<br>
+		<input type="number" required name="abc" id="name" placeholder="Enter your otp" required>
+		<br><br>
+		<input type="submit" name="submit" id="Next" value="Submit" onclick="main.action='{% url 'final'%}'; return true;">
+		<br>
+		<div class="inputa-box">Otp
+           	<input type="number" value="{{otp}}" required name="otp1" placeholder="Enter otp" required>
         </div>
-    </body>
+	</form>
+	</div>
+</div>
+</div>
+	<div id="c3">
+		<p>Contact details : 6009966876,9863103113</p>
+		<p>Address : Joynagar,Agartala,Tripura West</p>
+		<p><i class="fas fa-copyright"></i> copyright @2022.all right reserve</p>
+		<p>Available in tripura only</p>
+	</div>
+</body>
+</html>

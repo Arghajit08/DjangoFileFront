@@ -10,7 +10,7 @@ def result(request):
     from twilio.rest import Client
     
     sid='ACad20495dd3bf324541f3c9a60657ddf9'
-    authToken='d380ee5774d810f58cc5fb3f8cd89b85'
+    authToken='06fbf11c35fb80bb47a24105f33cd18d'
 
     client=Client(sid,authToken)
 
@@ -38,6 +38,6 @@ def otp_verification(request):
     actual=request.GET['otp1']
     new=request.GET['abc']
     if actual==new:
-        return redirect("https://xeroxfin.herokuapp.com/")
+        return redirect("https://xeroxdetail.herokuapp.com/")
     else:
         return render(request,"index2.html")

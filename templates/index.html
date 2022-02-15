@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>printinALL</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printinALL</title>
   <style>
     body{
       /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
@@ -95,48 +95,31 @@
     }
     }
   </style>
-	<script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1 class="print">Welcome to printinALL</h1>
-	<div>
-		<p class="c2"></p>
-	</div>
-	<div class="main">
-		<div class="form">
-			<h2>Fill up</h2>
-			<form id="page" action="{% url 'result'%}" method="get">
-				<label>Name</label>
-				<br>
-				<input type="text" required name="name" id="name" placeholder="Enter your name" required>
-				<br><br>
-				<label>Address</label>
-				<br>
-				<input type="text" required name="P" id="name" placeholder="Enter your location" required>
-				<br><br>
-				<label>Contact No.</label>
-				<br>
-				<input type="number" required name="G" id="name" placeholder="Your contact no." required>
-				<br><br>
-				<label id="category">Choose your Category</label>
-				<br>
-				<select id="category" required name="category" required>
-				<option value="spiral">Spiral</option>
-				<option value="staple">Staple</option>
-				<option value="cellotape">Cello tape</option>
-				<option value="binding">Binding</option>
-				</select>
-				<br><br>
-				<input type="submit" name="submit" id="submit" value="Next">
+    <h1 class="print">Welcome to printinALL</h1>
+    <div>
+        <p class="c2"></p>
+    </div>
+    <div class="main">
+        <div class="form">
+            <h2>Fill up</h2>
+            <form id="page" action="{% url 'result'%}" method="get">
+                <label>Contact No.</label>
+                <br>
+                <input type="number" required name="G" id="name" placeholder="Your contact no." required>
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="Next">
 
-			</form>
-		</div>
-	</div>
-	<div id="c3">
-		<p>Contact details : 6009966876,9863103113</p>
-		<p>Address : Joynagar,Agartala,Tripura West</p>
-		<p><i class="fas fa-copyright"></i> copyright @2022.all right reserve</p>
-		<p>Available in tripura only</p>
-	</div>
+            </form>
+        </div>
+    </div>
+    <div id="c3">
+        <p>Contact details : 6009966876,9863103113</p>
+        <p>Address : Joynagar,Agartala,Tripura West</p>
+        <p><i class="fas fa-copyright"></i> copyright @2022.all right reserve</p>
+        <p>Available in tripura only</p>
+    </div>
 </body>
 </html>

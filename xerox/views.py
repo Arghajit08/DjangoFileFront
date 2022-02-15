@@ -10,39 +10,8 @@ def result(request):
     number=request.GET['G']
     document=request.GET['category']
     print(document)
-    from twilio.rest import Client
     import random
-    
-    sid='ACad20495dd3bf324541f3c9a60657ddf9'
-    authToken='d380ee5774d810f58cc5fb3f8cd89b85'
-
-    client=Client(sid,authToken)
     str_number='+91'+str(number)
-
-    
-    sid1='ACdc82b5afee95e7d01d983bfa471b869a'
-    authToken1='1ef64a3025557673b50064bc1b1009e4'
-    
-    client1=Client(sid1,authToken1)
-
-    from_whatsapp_number='whatsapp:+14155238886'
-    to_whatsapp_number='whatsapp:+919863103113'
-    
-    message=client.messages.create(body=name,
-                                   from_=from_whatsapp_number,
-                                   to=to_whatsapp_number)
-    
-    message=client.messages.create(body=address,
-                                   from_=from_whatsapp_number,
-                                   to=to_whatsapp_number)
-
-    message=client.messages.create(body=number,
-                                   from_=from_whatsapp_number,
-                                   to=to_whatsapp_number)
-    
-    message=client.messages.create(body=document,
-                                   from_=from_whatsapp_number,
-                                   to=to_whatsapp_number)
     import requests
     url='https://www.fast2sms.com/dev/bulkV2'
     n=random.randint(1000,9999)

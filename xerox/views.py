@@ -5,11 +5,22 @@ def home(request):
     return render(request,"index.html")
 def result(request):
     from django.shortcuts import render,redirect
-    name=request.GET['name']
-    address=request.GET['P']
     number=request.GET['G']
-    document=request.GET['category']
-    print(document)
+    
+    from twilio.rest import Client
+    
+    sid='ACad20495dd3bf324541f3c9a60657ddf9'
+    authToken='d380ee5774d810f58cc5fb3f8cd89b85'
+
+    client=Client(sid,authToken)
+
+    from_whatsapp_number='whatsapp:+14155238886'
+    to_whatsapp_number='whatsapp:+919863103113'
+    
+    message=client.messages.create(body=number,
+                                   from_=from_whatsapp_number,
+                                   to=to_whatsapp_number)
+    
     import random
     str_number='+91'+str(number)
     import requests
